@@ -6,5 +6,9 @@
   "scripts": {},
   "keywords": [],
   "author": "Quramy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Quramy/squirrel-electron-update.git"
+  },
   "license": "MIT"
 }
