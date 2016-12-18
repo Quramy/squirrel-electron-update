@@ -6,8 +6,8 @@
   "scripts": {
     "clean": "rimraf release",
     "start": "electron app",
-    "build": "build -m",
-    "publish": "build -m --publish always"
+    "build": "build -w",
+    "publish": "build -w --publish always"
   },
   "repository": {
     "type": "git",
@@ -44,7 +44,8 @@
       ]
     },
     "win": {
-      "icon": "icon/icon.ico"
+      "icon": "icon/icon.ico",
+      "target": ["squirrel"]
     },
     "squirrelWindows": {
       "iconUrl": "https://github.com/joe_re/electron-book/src/electron_chat/blob/master/src/electron_chat/icons/icon.ico?raw=true",
