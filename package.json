@@ -1,13 +1,13 @@
 {
   "name": "squirrel-electron-update",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf release",
     "start": "electron app",
-    "build": "build -w",
-    "publish": "build -w --publish always"
+    "build": "build -mw",
+    "publish": "build -mw --publish always"
   },
   "repository": {
     "type": "git",
