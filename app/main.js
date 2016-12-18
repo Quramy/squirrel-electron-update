@@ -1,10 +1,11 @@
 const {app, autoUpdater, BrowserWindow} = require('electron');
+const os = require('os');
 
+console.log(app.getVersion());
 let win;
 
-const feedURL = "https://squirrel-electron-update.herokuapp.com/download";
-
 if (process.platform === "win32") {
+  const feedURL = "https://squirrel-electron-update.herokuapp.com/update/win32/" + app.getVersion();
   autoUpdater.setFeedURL(feedURL);
   autoUpdater.checkForUpdates();
   autoUpdater.on('update-download', () => {
