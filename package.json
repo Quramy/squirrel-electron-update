@@ -7,7 +7,7 @@
     "clean": "rimraf release",
     "start": "electron app",
     "build": "build -m",
-    "publish": "export GH_TOKEN=d7a14b80013029c1aee46cf275cefb73d159ba57; build -m --publish always"
+    "publish": "build -m --publish always"
   },
   "repository": {
     "type": "git",
