@@ -1,0 +1,51 @@
+{
+  "name": "squirrel-electron-update",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron app",
+    "build": "build"
+  },
+  "devDependencies": {
+    "electron": "^1.4.12",
+    "electron-builder": "^10.8.1"
+  },
+  "build": {
+    "appId": "my.app.id",
+    "puroductName": "Electron Chat",
+    "linux": {
+      "category": "Chat"
+    },
+    "mac": {
+      "icon": "icon/icon.icns",
+      "category": "public.app-category.social-networking"
+    },
+    "dmg": {
+      "icon": "icon/icon.icns",
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "icon": "icon/icon.ico"
+    },
+    "squirrelWindows": {
+      "iconUrl": "https://github.com/joe_re/electron-book/src/electron_chat/blob/master/src/electron_chat/icons/icon.ico?raw=true",
+      "msi": true
+    }
+  },
+  "directories": {
+    "app": "app",
+    "output": "release"
+  }
+}
