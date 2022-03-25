@@ -14,7 +14,7 @@
     "url": "https://github.com/Quramy/squirrel-electron-update.git"
   },
   "devDependencies": {
-    "electron": "^1.4.12",
+    "electron": "^13.6.6",
     "electron-builder": "^10.8.1"
   },
   "build": {
